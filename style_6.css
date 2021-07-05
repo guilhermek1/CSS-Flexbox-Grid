@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* TOP NAV */
+.topnav {
+  position: fixed;
+  width: 100%;
+  height: 20vw;
+  background-color: rgb(3, 3, 3);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 200;
+}
+
+/* SMALL VIEWPORT LOGO */
+.logo-mini a {
+  float: left;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 3rem 0 0.5rem;
+}
+
+/* HAMBURGUER MENU */
+.line {
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #fff;
+  margin-bottom: 0.3rem;
+}
+.menu {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.menu:hover .line {
+  width: 2.5rem;
+}
+
+.line-1,
+.line-3 {
+  width: 1.8rem;
+  transition: 0.2s;
+}
+/* CLICK EVENT */
+.checkbox:checked ~ .navigation {
+  top: 19vw;
+}
+.checkbox:checked ~ .menu-icon .line-1 {
+  transform: rotate(-405deg) translate(-2px, 4px);
+}
+.checkbox:checked ~ .menu-icon .line-3 {
+  transform: rotate(405deg) translate(-2px, -4px);
+}
+.checkbox:checked ~ .menu-icon .line-2 {
+  display: none;
+}
+.checkbox:checked ~ .navigation .links {
+  transition: ease-in 0.5s;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  display: flex;
+  width: 100%;
+  height: 100vw;
+  background-color: rgb(0, 0, 0);
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  top: -100vw;
+  transition: 0.5s;
+  z-index: 100;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+/* LINKS */
+.links {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: 0.1s;
+}
+.links a {
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.links a:hover {
+  color: rgba(255, 255, 255, 0.507);
+}
+
+/* HERO */
+
+/* HERO GRADIENT LAYER */
+.gradient {
+  width: 100%;
+  height: 150vw;
+  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 10;
+  position: absolute;
+}
+.hero {
+  width: 100%;
+  height: 150vw;
+  animation-name: hero;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+
+  animation-play-state: running;
+}
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes hero {
+  0% {
+    background: url("UNIVERSITY/img-1.jpg") no-repeat center / cover;
+  }
+  50% {
+    background: url("UNIVERSITY/img-2.jpg") no-repeat center / cover;
+  }
+  75% {
+    background: url("UNIVERSITY/img-3.jpg") no-repeat center / cover;
+  }
+  100% {
+    background: url("UNIVERSITY/img-4.jpg") no-repeat center / cover;
+  }
+}
+
+/* CONTAINER */
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  height: 170vw;
+  width: 100%;
+}
+
+.container-1 h2 {
+  position: relative;
+  bottom: 20vw;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  z-index: 90;
+  padding: 1%;
+}
+.container-1 p {
+  z-index: 90;
+  position: relative;
+  bottom: 10vw;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 100vw;
+}
+
+/* CONTAINER-2 STYLE / ABOUT US */
+
+/* H2 & paragraph*/
+.cont {
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+  height: 10vw;
+}
+.paragraph {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
+}
+.btn a {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+.btn {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-2 {
+  background-color: rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  transition: ease-in 1s;
+}
+.container-2:hover {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.btn:hover {
+  background-color: rgba(24, 23, 23, 0.932);
+  color: #000;
+}
+
+.about-hero {
+  width: 100%;
+  height: 100vw;
+  margin: auto;
+  background: url("UNIVERSITY/img-6.jpg") no-repeat center / cover;
+  text-align: right;
+}
+/* END OF CONTAINER-2 STYLE */
+
+/* CONTAINER 3 STYLE/ ACADEMICS */
+.container-3 {
+  background-color: rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  transition: ease-in 1s;
+  margin-top: 10vw;
+}
+
+.container-3:hover {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.about-hero-3 {
+  width: 100%;
+  height: 100vw;
+  background: url("UNIVERSITY/img-4.jpg") no-repeat center / cover;
+}
+/* CONTAINER-4 STYLE/ ATHLETICS */
+.container-4 {
+  background-color: rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  transition: ease-in 1s;
+  margin-top: 10vw;
+}
+.container-4:hover {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.about-hero-4 {
+  width: 100%;
+  height: 100vw;
+  background: url("UNIVERSITY/img-7.jpg") no-repeat center / cover;
+}
+/* CONTAINER-5 STYLE/ ARTS */
+.container-5 {
+  background-color: rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  transition: ease-in 1s;
+  margin-top: 10vw;
+}
+.container-5:hover {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.about-hero-5 {
+  width: 100%;
+  height: 100vw;
+  background: url("UNIVERSITY/img-8.jpg") no-repeat center / cover;
+}
+
+/* END OF MAIN */
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 120vw;
+  background-color: rgb(17, 17, 17);
+  margin-top: 10vw;
+
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.get-in-touch {
+  height: 45%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+}
+.get-in-touch a {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  margin: 1rem 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.get-in-touch a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.foot {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+.footer-logo {
+  height: 45%;
+  width: 100%;
+  font-size: 2rem;
+}
+#copy {
+  width: 50vw;
+  margin: auto;
+}
+/* END FOOTER */
+
+/* QUERIES */
+/* DESKTOP */
+@media only screen and (min-width: 1200px) {
+  .topnav {
+    height: 3vw;
+    background-color: rgb(255, 255, 255);
+    transition: 2s;
+  }
+
+  .menu {
+    display: none;
+  }
+  .navigation {
+    top: 0.1px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 1vw;
+    align-items: center;
+    margin-left: 20%;
+    background: transparent;
+  }
+  .links {
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    align-items: baseline;
+  }
+  .links a {
+    font-size: 1.3rem;
+    width: 8rem;
+    height: 2rem;
+    padding: 1%;
+    color: black;
+  }
+  .links a:hover {
+    color: rgb(255, 94, 0);
+  }
+  .logo-mini a {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+  }
+
+  .right-links {
+    position: relative;
+    left: 2%;
+  }
+  .container-1 {
+    height: 40vw;
+  }
+
+  /* end of top nav */
+
+  /* HERO */
+  .gradient {
+    height: 40vw;
+  }
+  .hero {
+    height: 40vw;
+  }
+  .container-1 h2 {
+    font-size: 3rem;
+    width: 25rem;
+    height: 2rem;
+    margin: auto;
+  }
+  .container p {
+    width: 30rem;
+    margin: auto;
+    font-family: "Ubuntu", sans-serif;
+    bottom: 5rem;
+  }
+  .text-hero {
+    bottom: 10rem;
+  }
+
+  /* END OF HERO */
+
+  /* CONTAINERS */
+  .main-container > .container {
+    height: 40vw;
+    width: 25rem;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 10%;
+  }
+  .about-hero {
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+  }
+
+  .about-hero-3 {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .about-hero-4 {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .about-hero-5 {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 65px;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  /* TEXT */
+  .cont {
+    width: 100%;
+    margin: 0;
+    height: 2rem;
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    width: 5rem;
+    height: 2rem;
+    margin: 5%;
+  }
+  .btn {
+    margin-top: 10rem;
+  }
+  .footer {
+    height: 17.5vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .get-in-touch {
+    height: 10vw;
+  }
+  .footer-logo {
+    font-size: 1rem;
+    height: 2rem;
+  }
+}
