@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style_6.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--  -->
+	<meta name="description"
+		content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.">
+	<title>About</title>
+	<link rel="shortcut icon" href="/UNIVERSITY/favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+	<style>
+		/* background cover STYLES */
+		.header {
+			text-align: center;
+
+
+
+		}
+
+		.cover {
+			background: linear-gradient(rgba(0, 0, 0, 0.365), rgba(0, 0, 0, 0.365)),
+				url("UNIVERSITY/img-9.jpg") no-repeat center/cover;
+			width: 100%;
+			height: 80vw;
+		}
+
+
+		#cover-text {
+			font-size: 2rem;
+			position: absolute;
+			top: 35vw;
+			color: #fff;
+
+
+		}
+
+		.text-wrapper {
+			margin: auto;
+			width: 10rem;
+		}
+
+		/* CONTENT SYLES */
+		.content-wrapper {
+			display: grid;
+			grid-template-rows: auto;
+			font-family: 'Ubuntu', sans-serif;
+		}
+
+		/* ASIDE */
+		.aside {
+			width: 100%;
+			height: 100vw;
+			background: rgb(241, 241, 241);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 10%;
+			box-shadow: grey 1px 1px 5px;
+		}
+
+		.list-card-wrapper {
+			font-size: 1.5rem;
+			padding: 0;
+
+		}
+
+		.list-card-wrapper li {
+			margin: 1rem;
+			list-style-type: none;
+			width: 90%;
+			border-bottom: solid 0.2px rgba(0, 0, 0, 0.363);
+			margin-bottom: 2rem;
+
+
+		}
+
+		ul {
+			padding: 0;
+
+		}
+
+		a {
+			text-decoration: none;
+			color: rgb(17, 17, 17);
+
+		}
+
+		/* CONTENT - 1 */
+		.content-1 {
+			text-indent: 2%;
+		}
+
+		.content-1 h2 {
+			font-size: 2rem;
+		}
+
+		.text-wrapper {
+			width: 90%;
+			padding: 1rem;
+			margin: 10px;
+			text-align: left;
+			font-size: 1.3rem;
+		}
+
+		/* HOVERS */
+		li a:hover {
+			color: rgb(255, 94, 0);
+
+		}
+
+		/* MEDIA QUERIES */
+		@media only screen and (min-width: 1200px) {
+			.cover {
+				height: 20vw;
+				margin: 0;
+			}
+
+			#cover-text {
+				top: 10vw;
+			}
+
+			.text-wrapper {
+				width: 300px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: auto;
+			}
+
+			/* CONTENT */
+
+			.content-wrapper {
+				display: grid;
+				grid-template-columns: 30% 50%;
+
+			}
+
+			.content-1 {
+				margin-left: 10rem;
+			}
+
+			.aside {
+				margin: 0;
+				width: 18vw;
+				height: 30vw;
+				box-shadow: grey 1px 1px 5px;
+				margin-left: 10vw;
+				position: relative;
+				bottom: 2vw;
+
+
+			}
+
+			li a {
+				font-size: 1.3rem;
+			}
+
+			.text-wrapper {
+				width: 40vw;
+				font-size: 1rem;
+
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- TOP NAV -->
+	<nav>
+		<div class="topnav">
+			<div class="logo-mini"><a href="assign06.html">Excelsis University</a></div>
+
+
+			<input type="checkbox" class="checkbox" id="click" hidden>
+			<!-- HAMBURGUER MENU -->
+			<div class="menu-icon">
+
+				<label for="click">
+					<div class="menu">
+						<div class="line line-1"></div>
+						<div class="line line-2"></div>
+						<div class="line line-3"></div>
+					</div>
+				</label>
+			</div>
+
+			<div class="navigation">
+
+				<div class="links">
+					<div class="inputcontainer">
+						<input type="text" hidden>
+					</div>
+					<a href="university.html">University</a>
+					<a href="academics.html">Academics</a>
+					<a href="athletics.html" class="right-links">Athletics</a>
+					<a href="arts.html" class="right-links">Arts</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- MAIN -->
+	<main>
+		<div class="header">
+
+			<div class="text-wrapper">
+
+				<h2 id="cover-text">About</h2>
+			</div>
+
+			<div class="cover"></div>
+		</div>
+
+		<div class="content-wrapper">
+			<aside>
+				<div class="aside">
+					<div class="list-card-wrapper">
+						<ul>
+							<li>
+								<a href="#">Excel News</a>
+
+							</li>
+							<li>
+								<a href='#'>ExcelTV </a>
+							</li>
+							<li><a href='#'>Campus Map </a></li>
+							<li><a href='#'>Directions to Excelsis</a></li>
+							<li><a href='#'>Employment</a></li>
+							<li><a href='#'>Tour</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</aside>
+			<div class="content-1">
+				<header>
+					<div class="header-wrapper">
+						<h2>Our Mission</h2>
+					</div>
+				</header>
+				<div class="text-wrapper">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+						at, eveniet dolor accusamus temporibus animi voluptatem rerum
+						ipsam laboriosam, tenetur repudiandae eius. Tempora odio quaerat
+						nobis facilis repudiandae, aperiam illum pariatur cumque
+						perspiciatis dolores deserunt dignissimos modi a dicta repellat?
+						Quo similique minima architecto exercitationem consequatur
+						distinctio, ipsa nemo alias voluptatem in, blanditiis iste id
+						laudantium! Corporis facilis, veniam dignissimos quibusdam cum,
+						amet earum saepe esse, error odio tempore velit molestias iste
+						adipisci quasi laborum officia vitae distinctio sint ut
+						consequatur. Et rerum perferendis dignissimos provident
+						repellendus sed ducimus ea autem veniam quaerat ipsa laboriosam,
+						nobis doloremque, sequi nisi nihil corporis sunt fugit? Tempore
+						quisquam voluptates et blanditiis, aspernatur rerum magni
+						molestias nam quidem quaerat repellat dicta maiores, molestiae
+						laudantium, dolore aliquam qui harum! Alias, accusamus dicta
+						velit dolore quibusdam nisi unde! Iusto, amet recusandae! Id
+						consequuntur modi, laudantium sed obcaecati facilis cum ut
+						inventore dolorum quas quisquam deleniti magnam facere,
+						perspiciatis omnis distinctio iure? Recusandae iusto atque
+						dolorum consectetur, aliquam alias id qui ipsam numquam nisi
+						ullam nihil quaerat culpa cum repudiandae. Perspiciatis sunt
+						quam deleniti eos impedit excepturi, quae doloribus quia nihil
+						eligendi autem veniam sed corrupti distinctio? Eius quod
+						possimus commodi excepturi iure, repellat magnam voluptates
+						ullam.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<div class="footer">
+			<div class="get-in-touch">
+				<h2 class="foot h2">Get in Touch</h2>
+				<a href="#">Contact Excelsis</a>
+				<a href="#">Maps & Directions</a>
+				<a href="#">Jobs</a>
+			</div>
+			<div class="footer-logo">
+				<h2>Excelsis University</h2>
+			</div>
+			<p id="copy">
+				&copy 2021 Guilherme Anjos
+			</p>
+
+		</div>
+	</footer>
+</body>
+
+</html>
